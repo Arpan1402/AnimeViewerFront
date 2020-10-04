@@ -1,0 +1,31 @@
+.login-wrap{
+    background-image: url("../../../../assets/Images/Login/One Piece.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    padding-top: 10%;
+    margin: auto;
+    text-align: center;
+    font-weight: 800;
+    -webkit-text-stroke: 3px red;
+    text-transform: uppercase;
+    font-size: 500%;
+    color: rgba(0,0,0,0.7);
+}
+
+form{
+    margin:50px;
+    width: 700px;
+    border:7px solid black;
+    border-radius: 10px;
+    margin: 100px auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.control-label, .checkbox{
+    color: white;
+    padding: 10px;
+}

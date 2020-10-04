@@ -1,0 +1,147 @@
+/*  Home Cover  */
+
+.Container,
+.Home-Box,
+.Home-Box-Inner {
+  height: 100%;
+  width: 100%;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-delay: 0.1s;
+  animation-duration: 0.2s;
+}
+
+.Container {
+  background-image: url("../../../../assets/Images/Home/Cover/Home Background.jpg");
+}
+
+.Home-Box {
+  display: table;
+}
+
+.Home-Box-Inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.title {
+  font-size: 550%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgba(0, 0, 0, 70%);
+  letter-spacing: 10px;
+  font-weight: bold;
+  -webkit-text-stroke: 3px red;
+  opacity: 100%;
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
+}
+
+.viewList {
+  font-size: 200%;
+  font-family: 'Times New Roman', Times, serif;
+  border: 2px solid white;
+  color: white;
+  animation-delay: 0.7s;
+  animation-duration: 0.5s;
+}
+
+.viewList:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* Featured Anime Section*/
+
+/*heading*/
+.featured {
+    text-align: center;
+    margin: 50px;
+  }
+
+
+
+/* Anime Info button defaults*/
+.viewAnime {
+    color: black;
+    border: 3px solid black;
+    margin-bottom: 50px;
+  }
+  
+.viewAnime:hover {
+    color: white;
+    background-color: black;
+  }
+
+.viewTemp{
+    height:700px;
+    margin:50px 0;
+}
+
+
+.animeTitle{
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.animeTitle h3{
+  border:5px solid black;
+  border-radius: 5px;
+  margin:10px;
+  padding: 10px;
+}
+
+.animePicDefault{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.animePicDefault1{
+    border-top: 600px solid transparent;
+    border-left: 150px solid white;   
+}
+
+.animePicDefault2{
+    border-top: 600px solid transparent;
+    border-right: 150px solid white;   
+}
+
+.animeView{
+  padding: 0 50px;
+  height: 100%;
+}
+
+.desc{
+  margin: 50px 0;
+}
+
+#animepic1{
+  background-image: url("../../../../assets/Images/Home/Anime-Theme/AoT.jpg");
+}
+
+#animepic2{
+  background-image: url("../../../../assets/Images/Home/Anime-Theme/Naruto.jpg");
+}
+
+#animepic3{
+  background-image: url("../../../../assets/Images/Home/Anime-Theme/Dragon-Ball-Super-Goku-Ultra-Instinct-White-4K.jpg");
+}
+
+#animepic4{
+  background-image: url("../../../../assets/Images/Home/Anime-Theme/death-note-4K.jpg");
+}
+
+#animepic5{
+  background-image: url("../../../../assets/Images/Home/Anime-Theme/Your lie in april.jpg");
+}

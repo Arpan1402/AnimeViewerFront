@@ -1,0 +1,59 @@
+.content-wrap{
+    background-image: url("../../../../assets/Images/Registration/reg.png");
+    height: 100%;
+}
+
+
+/* Title Section */
+.title-wrap{
+    padding-top: 10%;
+    text-align: center;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 500%;
+    -webkit-text-stroke:3px black;
+    color: rgba(0,0,0, 0.5);
+}
+
+/* Form Section */
+.form-horizontal{
+    margin:50px auto;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.7);
+    border: 5px solid rgba(0,0,0, 1);
+    border-radius: 15px;
+    width: 700px;
+}
+
+.form-group{
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.control-label{
+    align-self: center;
+    left: auto;
+    right: auto;
+}
+
+label{
+    color: white;
+    font-weight: 600;
+}
+
+.btn{
+    margin: 0 auto;
+}
+
+
+/*  Error block  */
+
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+
+#errorBox{
+    color: red;
+}

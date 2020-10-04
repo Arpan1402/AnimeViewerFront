@@ -1,0 +1,35 @@
+<div class="content-wrap">
+    <div class="title-wrap">
+        <h1 class="title">
+            REGISTER HERE
+        </h1>
+    </div>
+    <form class="form-horizontal" [formGroup]="regForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="mail" class="control-label">Email</label>
+            <div class="form-control-outer">
+                <input type="email" class="form-control" id="mail" placeholder="ab@cd.xyz" formControlName="email">
+                <span id="errorBox" *ngIf="!regForm.get('email').valid && regForm.get('email').touched">Please enter a valid email </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pass" class="control-label">Password</label>
+            <div class="">
+                <input type="password" class="form-control" id="pass" placeholder="Minimum 6 characters and at least 1 number" formControlName="password">
+                <span id="errorBox" *ngIf="!regForm.get('password').valid && regForm.get('password').touched">Please enter a valid Password </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cpass" class="control-label">Confirm Password</label>
+            <div class="">
+                <input type="password" class="form-control" id="cpass" placeholder="Re-enter password" formControlName="confirmPassword">
+                <span id="errorBox" *ngIf="!regForm.get('confirmPassword').valid && regForm.get('confirmPassword').touched">Password do not match </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-dark" >REGISTER</button>
+            </div>
+          </div>
+    </form>
+</div>
