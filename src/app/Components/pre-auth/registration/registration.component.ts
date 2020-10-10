@@ -20,18 +20,18 @@ export class RegistrationComponent implements OnInit {
     this.regForm=new FormGroup({
       'email':new FormControl(null,[Validators.required,Validators.email]),
       'password':new FormControl(null,[Validators.required,Validators.minLength(6)]),
-      'confirmPassword':new FormControl(null,[Validators.required,this.cPassValidator.bind(this)])
+      'confirmPassword':new FormControl(null,[Validators.required])
     });
-
   }
 
   onSubmit(){
+    
     console.log(this.regForm);
   }
 
   cPassValidator(control:FormControl):{[s:string]:boolean}{
-    let pass=this.regForm.value;
-    if(control.value!==pass.password){
+    let pas=this.regForm.value;
+    if(control.value!==pas.password){
       return{"PassowrdMatchFailed":true}
     }
   }

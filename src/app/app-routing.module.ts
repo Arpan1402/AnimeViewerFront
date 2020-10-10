@@ -7,9 +7,9 @@ import { RegistrationComponent } from './Components/pre-auth/registration/regist
 
 const routes: Routes = [
 
-  {path:"",component:HomeComponent},
-  {path:"login",component:LoginComponent},
-  {path:"signup", component:RegistrationComponent}
+  {path:'',component:HomeComponent},
+  {path:'login',component:LoginComponent},
+  {path:'signup', component:RegistrationComponent}
 ];
 
 @NgModule({
