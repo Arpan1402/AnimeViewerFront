@@ -1,0 +1,1 @@
+export const genreList=['Action', 'Adventure', 'Sci-Fi', 'Romance', 'Comedy'];

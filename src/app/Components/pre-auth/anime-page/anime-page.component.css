@@ -1,0 +1,96 @@
+.animePage-wrap{
+    width: 100%;
+    height: 100%;
+}
+
+.animePic{
+    background-image: url('../../../../assets/Images/Home/Anime-Theme/AoT.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 65%;
+    display: table;
+}
+
+.animeTitle{ 
+    font-size: 550%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(0, 0, 0, 70%);
+    letter-spacing: 10px;
+    font-weight: bold;
+    -webkit-text-stroke: 3px red;
+    opacity: 100%;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.animeDesc{
+    margin:20px;
+}
+
+.seasons{
+    margin:20px;
+    background-color: rgba(250, 224, 153, 0.2);
+    border: 3px rgba(0, 0, 0, 20%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.season{
+    height: 40px;
+    align-items: center;
+}
+
+.episodeList{
+    margin: 10px;
+}
+
+.card.disabled {
+    opacity: 0.5;
+}
+
+.episode{
+    background-color: rgba(235, 130, 130, 0.2);
+    border: 3px rgba(235, 130, 130, 0.7);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+select{
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(235, 130, 130);
+    align-self: middle;
+    min-width: 100%;
+    color: rgb(235, 130, 130);
+    font-size: x-large;
+}
+
+option{
+    font-size: medium;
+    color: black;
+}
+
+.epName{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.epLink{
+    width: 100%;
+}
+
+h3{
+    margin-top: 50px;
+    min-width: 100%;
+    text-align: center;
+}

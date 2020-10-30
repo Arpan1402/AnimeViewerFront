@@ -1,0 +1,58 @@
+<div class="animePage-wrap">
+
+    <div class="animePic">
+        <div class="animeTitle">
+            <h1>
+                Attack on Titan
+            </h1>
+        </div>
+    </div>
+
+    <div class="animeDesc">
+        <p>Genre: {{genre}} </p>
+        <p>Status: {{status}} </p>
+        <p>Release Date: {{releaseDate}}</p>
+        <p>Plot: {{plot}} </p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h3>Episode List</h3>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+    
+    <div class="seasons">
+
+        <div class="season row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <select  [(ngModel)]="selected" name="Select Season" (change)="ifChanged()">
+                    <option *ngFor="let season of seasonList">{{season}}</option>
+                </select>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="epList">
+            <div *ngFor="let ep of epList" class="episode">
+                <div class="row">
+                    <div class="col-md-10 epName">
+                        {{ep.eName}}
+                    </div>
+                    <div class="col-md-2 ">
+                        <button class="epLink btn btn-primary">
+                            {{ep.eLink}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>

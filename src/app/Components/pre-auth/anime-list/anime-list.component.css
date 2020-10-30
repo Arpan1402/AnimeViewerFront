@@ -1,0 +1,59 @@
+.animeList-wrap{
+    background-image: url("../../../../assets/Images/Home/Cover/Home Background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.inner-wrap{
+    margin:200px 300px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border: 3px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.animeBox{
+    background-image: url("../../../../assets/Images/Home/Anime-Theme/AoT.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    vertical-align: baseline;
+    font-size: xx-large;
+    color: ivory;
+    margin: 10px 0px;
+}
+
+.listInner{
+    overflow-y: scroll;
+    height: 650px;
+    margin:20px;
+    background-color: lavender;
+    border: 3px solid lavender;
+    border-radius: 5px;
+}
+
+h2{
+    margin: 10px auto;
+    vertical-align: middle;
+    text-align: center;
+    color: honeydew;
+}
+label{
+    color:honeydew;
+    font-size: 150%;
+}
+
+.srchOut{
+    padding-top: 44px;
+}
+
+form, .srch{
+    width: 100%;
+}

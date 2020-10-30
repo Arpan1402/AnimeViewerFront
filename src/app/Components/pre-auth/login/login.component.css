@@ -29,3 +29,8 @@ form{
     color: white;
     padding: 10px;
 }
+
+.form-group{
+    margin: 20px auto;
+    padding: 20px;
+}

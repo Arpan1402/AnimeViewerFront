@@ -1,0 +1,72 @@
+.profile-wrap{
+    height: 100%;
+    background-image: url("../../../../assets/Images/Profile/gintoki.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+h5{
+    padding: 5px 0px;
+    
+}
+
+.form-wrap{
+    top:100px;
+    left: 100px;
+    position: absolute;
+    width: 700px;
+}
+
+.genre-outer{
+    border: 5px solid black;
+    height: 450px;
+}
+
+.genre-inner{
+    border: 3px solid whitesmoke;
+    margin: 10px;
+    height: 200px;
+}
+
+
+ul li{
+    list-style: none;
+    margin: 5px;
+    padding: 2px;
+}
+
+ul li div{
+    width: 220px;
+}
+
+.genre-box{
+    background-color:aquamarine;
+    height: 43px;
+    border-left: 2px solid aquamarine;
+    border-radius: 5px;
+    border-right: none;
+    width: 180px;
+    margin: 10px;
+}
+
+.genre-box div{
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.genre-box button{
+    color: white;
+    background-color:rgb(247, 114, 158);
+    border: none;
+}
+
+h6{
+    margin: 10px;
+}
+
+.gender{
+    margin:20px 20px 20px 0px;
+}

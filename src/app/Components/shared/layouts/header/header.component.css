@@ -1,0 +1,67 @@
+.wrap{
+    background-color: rgba(0, 0,0, 0.7);
+}
+
+.navbar-brand img{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-toggler{
+    color: red;
+    border: 2px solid red;
+    margin-right: 10px;
+}
+
+
+.nav-item a{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: red;
+    height: 100%;
+    text-transform: uppercase;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 130%;
+}
+
+.nav-item a:hover{
+    color: tomato;
+    font-size: 140%;
+}
+
+.drop{
+    position: relative;
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50px;
+    left: 5px;
+}
+
+.dropdown-items{
+    font-weight: 300;
+    font-size: 90%;
+}
+
+.dropdown-items:hover{
+    font-size: 90%;
+}
+
+.login{
+    color: red;
+    margin: 0 20px;
+}
+
+.log a{
+    text-decoration: none;
+    color: red;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+.log a:hover{
+    color: tomato;
+}

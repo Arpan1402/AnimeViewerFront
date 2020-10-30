@@ -1,0 +1,100 @@
+<div class="profile-wrap">
+ 
+    <div class="form-wrap">
+        <form action="" class="from-horizontal" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+            <div class="form-row">
+                <h5 class="col-md-12">Name</h5>
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" formControlName="fname">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" formControlName="lname">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <h5 class="col-md-12">Gender</h5>
+                <div class="form-check form-check-inline gender" *ngFor="let gender of genders">
+                  <input type="radio" class="form-check-input" id="{{gender}}" name="gender" formControlName="gender" value="{{gender}}">
+                  <label for="{{gender}}" class="form-check-label">{{gender}}</label>
+                </div>
+                
+              </div>
+
+            <div class="form-group">
+                <h5 class="col-md-12">Date of Birth</h5>
+                <input type="date" class="form-control" formControlName="dob">
+            </div>
+
+            <div class="add-genre genre-outer form-group">
+
+              <div class="genre-inner">
+
+                <h6>Genre List</h6>
+                <div class="row">
+                  <div class="col-md-4" *ngFor="let genre of genres">
+                    <div class="row genre-box">
+                      <div class="col-md-8">
+                        {{genre}}
+                      </div>
+                      <button class="col-md-4 btn btn-primary" (click)="onAddGenre(genre)">+</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="genre-inner">
+
+                <h6>Your Genre</h6>
+                <div class="row">
+                  <div class="col-md-4" *ngFor="let genre of yourGenres">
+                    <div class="row genre-box">
+                      <div class="col-md-8">
+                        {{genre}}
+                      </div>
+                      <button class="col-md-4 btn btn-danger" (click)="onRemoveGenre(genre)">x</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- <div class="genre-inner">
+                <h6>Genre List</h6>
+                <ul class="row">
+                  <li class="col-md-4" *ngFor="let genre of genres">
+                    <div class="row">
+                      <div class="col-md-10">
+                        {{genre}}
+                      </div>
+                      <button (click)="onAddGenre(genre)" class="btn btn-primary col-md-2"> + </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="genre-inner">
+                <h6>Your Genres</h6>
+                <ul class="row">
+                  <li class="col-md-4" *ngFor="let genre of yourGenres">
+                    <div class="row">
+                      <div class="col-md-10">
+                        {{genre}}
+                      </div>
+                      <button (click)="onRemoveGenre(genre)" class="btn btn-danger"> X </button>
+                    </div>
+                  </li>
+                </ul>
+              </div> -->
+
+            </div>
+
+          <button type="submit" class="btn btn-primary"> Submit </button>
+
+        </form>
+    </div>
+</div>

@@ -1,1 +1,28 @@
-<p>header works!</p>
+<nav class="wrap navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="">
+        <img src="../../../../../../assets/Images/Logo/AV.jpg" alt="AV">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-angle-double-down"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Keep Watching</a>
+        </li>
+        <li class="nav-item drop">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"aria-expanded="false" routerLink="/animeList">Find Anime</a>
+            <div class="dropdown-menu">
+              <li class="dropdown-items" *ngFor="let item of genres"><a href="">  {{item}} </a> </li>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+      <div class="login">
+        <h6 class="log"><a routerLink="/login">Login </a>/ <a routerLink="/signup">Sign Up</a></h6>
+      </div>
+    </div>
+  </nav>
