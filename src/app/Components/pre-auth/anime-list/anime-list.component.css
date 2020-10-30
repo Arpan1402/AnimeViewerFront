@@ -28,6 +28,8 @@
     font-size: xx-large;
     color: ivory;
     margin: 10px 0px;
+    border: 2px transparent;
+    border-radius: 3px;
 }
 
 .listInner{
